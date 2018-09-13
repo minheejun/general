@@ -1,0 +1,22 @@
+# Notes on setting up python environment for python-tools
+
+We use python2.7 for this project, since this is the version of python opencv available as part of the ros modules
+
+## Install python2 virtualenv
+ - you will need your jumpcloud username and password for this
+ - `sudo pip install virtualenv`
+
+## Create a new virtual environment
+python -m virtualenv python2-workspace
+
+Here, python2-workspace is the name given to the virtual environment. You can given any name of your choice
+
+## Activating the virtual environment for this project
+source python2-workspace/bin/activate
+
+You can de-activate using the command `deactivate`
+
+## Install required python packages
+To install the required python packages, activate the virtual environment and then
+
+pip install -r requirements.txt
